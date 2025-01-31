@@ -1,0 +1,106 @@
+.community-section {
+  background-color: white;
+  padding: 2.5rem 1rem; /* Adjusted for smaller screens */
+}
+
+.container {
+  max-width: 1280px; /* Equivalent to 7xl */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem; /* Reduced for smaller screens */
+}
+
+.title {
+  font-size: 2rem; /* Adjusted for mobile screens */
+  font-weight: bold;
+  color: black;
+}
+
+.subtitle {
+  margin-top: 1rem; /* Reduced for smaller screens */
+  font-size: 1.125rem; /* Slightly smaller text for mobile */
+  color: black;
+  max-width: 100%; /* Full width on small devices */
+  margin: 0 auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Single column by default */
+  gap: 2rem; /* Slightly reduced gap for compact spacing */
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.25rem; /* text-4xl for small devices */
+  }
+  .subtitle {
+    font-size: 1.25rem; /* text-xl */
+  }
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: 4rem; /* More spacing for large screens */
+  }
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    gap: 3rem; /* Larger gaps for better spacing */
+  }
+}
+
+.card {
+  background-color: white;
+  padding: 2rem; /* Default padding */
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* hover:shadow-xl */
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem; /* Space between icon and text */
+}
+
+.icon-container {
+  flex-shrink: 0; /* Ensures icon does not shrink */
+}
+
+.icon-bg {
+  width: 3rem; /* Slightly smaller icon for better scaling */
+  height: 3rem;
+  background-color: #e0e7ff; /* bg-indigo-100 */
+  border-radius: 0.75rem; /* Slightly rounded corners */
+}
+
+/* Accessibility and extra small device support */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Smaller headline for tiny screens */
+  }
+  .subtitle {
+    font-size: 1rem; /* Adjusted for small screens */
+  }
+  .card {
+    padding: 1.5rem; /* Slightly reduced padding for compact layout */
+  }
+  .icon-bg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

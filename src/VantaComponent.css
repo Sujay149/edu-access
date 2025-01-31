@@ -1,0 +1,96 @@
+/* Vanta Animation Container */
+.vanta-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  /* Overlay for the Vanta Animation */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    z-index: 1; /* Ensure overlay is above the animation */
+  }
+  
+  /* Text Styles */
+  .text {
+    font-size: 2rem; /* Adjust text size */
+    text-align: center; /* Center text */
+    margin: 0.5rem 0; /* Margin between text elements */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around footer */
+    position: relative; /* Position relative for z-index */
+    z-index: 2; /* Ensure footer is above the Vanta animation */
+  }
+  
+  /* Footer Grid */
+  .grid {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
+  }
+  
+  /* Footer Column */
+  .footer-column {
+    flex: 1; /* Equal width for columns */
+    min-width: 200px; /* Minimum width for responsiveness */
+    margin: 10px; /* Margin around columns */
+  }
+  
+  /* Footer Title */
+  .footer-title {
+    font-size: 1.5rem; /* Title size */
+    margin-bottom: 10px; /* Space below title */
+  }
+  
+  /* Footer List */
+  .footer-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+  }
+  
+  /* Footer Link */
+  .footer-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Footer Link Hover Effect */
+  .footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space above */
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex; /* Flexbox for layout */
+    gap: 15px; /* Space between social links */
+  }
+  
+  /* Social Link */
+  .social-link {
+    color: white; /* Link color */
+    text-decoration: none;
+  }

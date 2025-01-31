@@ -1,0 +1,154 @@
+/* HeroSection.css */
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(107, 70, 193, 0.85), rgba(128, 90, 213, 0.85));
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  max-width: 700px;
+  padding: 0 15px; /* Ensure padding for smaller screens */
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+.btn-primary {
+  background-color: #5a67d8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: #434190;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #6b46c1;
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem; /* Smaller title for tablets */
+  }
+
+  .hero-subtitle {
+    font-size: 1.75rem; /* Adjusted subtitle size */
+  }
+
+  .hero-description {
+    font-size: 1rem; /* Adjusted text size */
+  }
+
+  .button-group {
+    gap: 15px; /* Reduced gap between buttons */
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.9rem; /* Adjusted button font size */
+    padding: 10px 20px; /* Reduced button padding */
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 15px; /* Compact padding for smaller screens */
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Smaller title for mobile */
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem; /* Adjusted subtitle size */
+  }
+
+  .hero-description {
+    font-size: 0.9rem; /* Smaller description text */
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 12px; /* Smaller gap between buttons */
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.8rem; /* Smaller button font size */
+    padding: 10px 18px; /* Adjusted padding */
+  }
+}

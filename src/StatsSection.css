@@ -1,0 +1,90 @@
+/* Stats Section */
+.stats-section {
+  background-color: white; /* bg-white */
+  padding: 3rem 1rem; /* py-12 px-4 for mobile */
+  margin-top: -3rem; /* -mt-12 */
+  position: relative; /* relative */
+  z-index: 20; /* z-20 */
+}
+
+.container {
+  max-width: 1200px; /* Adjust for a more standardized container size */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 for mobile */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+  gap: 2rem; /* gap-8 */
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* md:grid-cols-4 */
+  }
+}
+
+.stat-card {
+  background-color: white; /* bg-white */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  text-align: center; /* text-center */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.stat-card:hover {
+  transform: translateY(-8px); /* Slight hover lift */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+}
+
+.stat-value {
+  font-size: 2rem; /* text-3xl */
+  font-weight: bold; /* font-bold */
+  color: #4f46e5; /* text-indigo-600 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.stat-label {
+  font-size: 1rem; /* text-base */
+  color: #4b5563; /* text-gray-600 */
+}
+
+/* Responsive Styles */
+
+/* Tablet Devices (Max Width: 768px) */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Keep two columns for tablets */
+    gap: 1.5rem; /* Reduce gap for smaller screens */
+  }
+
+  .stat-value {
+    font-size: 1.75rem; /* Slightly smaller text */
+  }
+
+  .stat-label {
+    font-size: 0.875rem; /* Adjust label size for smaller devices */
+  }
+}
+
+/* Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 1rem; /* Smaller gap for compact layout */
+  }
+
+  .stat-card {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .stat-value {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .stat-label {
+    font-size: 0.8rem; /* Adjust label font size */
+  }
+}

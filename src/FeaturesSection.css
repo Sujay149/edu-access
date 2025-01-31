@@ -1,0 +1,155 @@
+/* General Section Styling */
+.features-section {
+  padding: 50px 20px;
+  background-color: #f9fafb; /* Light background for a fresh feel */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2rem; /* Responsive font size */
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1rem; /* Slightly larger for readability */
+  color: #555;
+  margin-top: 10px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid layout */
+  gap: 30px;
+  justify-items: center;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.icon-bg {
+  background-color: #eff6ff; /* Light blue background for icons */
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  color: #3182ce; /* Blue color for the icons */
+  font-size: 32px;
+}
+
+.feature-title {
+  font-size: 1.25rem; /* Responsive heading size */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  font-size: 0.875rem; /* Slightly smaller for clarity */
+  color: #666;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #f7fafc;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.learn-more {
+  font-size: 0.875rem; /* Responsive text size */
+  color: #3182ce;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  color: #3182ce;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .features-section {
+    padding: 40px 15px;
+  }
+
+  .title {
+    font-size: 1.75rem; /* Smaller title for tablets */
+  }
+
+  .subtitle {
+    font-size: 0.9rem; /* Adjust subtitle size for tablets */
+  }
+
+  .card-content {
+    padding: 20px; /* Reduced padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section {
+    padding: 30px 10px; /* Compact padding for small screens */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Smaller title for mobile */
+  }
+
+  .subtitle {
+    font-size: 0.875rem; /* Adjust subtitle size for mobile */
+  }
+
+  .feature-title {
+    font-size: 1rem; /* Smaller title for cards */
+  }
+
+  .feature-description {
+    font-size: 0.75rem; /* Smaller description text */
+  }
+
+  .card-content {
+    padding: 15px; /* Compact card padding */
+  }
+
+  .icon {
+    font-size: 28px; /* Slightly smaller icons */
+  }
+
+  .icon-bg {
+    padding: 15px; /* Reduced padding for icons */
+  }
+}
